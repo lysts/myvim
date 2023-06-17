@@ -1,0 +1,3 @@
+[submodule "start/tide"]
+	path = start/tide
+	url = https://github.com/m-col/tide.git
