@@ -8,3 +8,11 @@
 # to update git submodule plugins:
 
     git -C ~/.vim/pack/myvim submodule update --remote
+
+# to add new git-backed plugin:
+
+    git submodule add <git repo url> start/<plugin name>
+
+# to remove new git-backed plugin:
+
+    git rm start/<plugin name>
