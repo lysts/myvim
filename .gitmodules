@@ -1,3 +1,6 @@
 [submodule "start/tide"]
 	path = start/tide
 	url = https://github.com/m-col/tide.git
+[submodule "start/myvim/vim-emoji-ab"]
+	path = start/myvim/vim-emoji-ab
+	url = https://gitlab.com/gi1242/vim-emoji-ab.git
