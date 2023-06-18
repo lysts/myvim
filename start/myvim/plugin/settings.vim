@@ -19,7 +19,6 @@ set noswapfile			"avoid creating swapfile
 set hidden                 	"allow hidden buffers
 set ttyfast                	"rendering
 set laststatus=2          	"status bar
-runtime macros/emoji-ab.vim	"enable emoji use
 
 "--Whitespace--
 set wrap			"lines longer > width of window wraps
