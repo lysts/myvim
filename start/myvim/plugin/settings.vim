@@ -1,57 +1,63 @@
-"---- VIMRC ----
+"----- VIMRC SETTINGS -----
 
-set nocompatible          "don't try to be vi compatible
+set nocompatible		"don't try to be vi compatible
 
-syntax on                   "turn on syntax highlighting
-filetype plugin indent on   "for plugins to load correctly
+syntax on			"enable syntax highlighting; highlights files in colour		
+filetype plugin indent on	"to load plugins correctly; vim detects filetype, file-specific indent on
+
+set number			"show line numbers
+set ruler			"show file stats
+set encoding=utf-8		"sets characters with which vim can work with
+set undolevels=200		"no. undo levels
+
+"--General--
+set undodir=~/.vim/undo//	"undo files
+set backupdir=~/.vim/backups//	"backups
+set directory=~/.vim/swap//	"swapfiles
+set noswapfile			"avoid creating swapfile
+
+set hidden                 	"allow hidden buffers
+set ttyfast                	"rendering
+set laststatus=2          	"status bar
+runtime macros/emoji-ab.vim	"enable emoji use
+
+"--Whitespace--
+set wrap			"lines longer > width of window wraps
+set textwidth=79		"max width of inserted txt, long line broken to get width, 0 to disable
+set tabstop=4			"max no. whitespace columns \t can take up 
+set shiftwidth=4		"default no. auto-indent spaces
+set softtabstop=4		"no. spaces per \t 
+set autoindent			"auto-indent new lines
+set expandtab			"use appropriate no. spaces to insert \t
+set noshiftround		"round indent to multiple of 'shiftwidth'
+
+"--Cursor motion--
+set mouse=a			"enable mouse in vim buffer
+set scrolloff=4			"centered scrolling focus
+set backspace=indent,eol,start	"backspace behaviour
+set matchpairs+=<:>		"use % to jump between character pairs
+				
+"--Navigate editor lines--
+nnoremap j gj			"down a line
+nnoremap k gk			"up a line
+
+"--Last line--
+set showmode			"display mode in last line of screen
+set showcmd			"show (partial) command in last line of screen
+
+"--Searching--
+nnoremap / /\v			"normal mode, characters have meaning (magic!) if accompanied by backslash
+vnoremap / /\v			"similarly for visual & select mode
+set hlsearch			"highlight search results
+set incsearch			"searches for strings while typing search term
+set ignorecase			"no case sensitivity when searching
+set smartcase			"searches ignore case if all lower case
+set showmatch			"jumps to matching character visible within screen
+
+	"--Dormant--
+	""map <leader><space> :let @/=''<cr> " clear search
+	""set formatoptions=tcqrn1	"whitespace formatting ??
+	""set visualbell		"blink cursor on error instead of beeping (grr) ??
+	"runtime! macros/matchit.vim
 
 
-    " TODO: Pick a leader key
-    " let mapleader = ","
-
-"set modelines=0                    "security
-"set number                 "show line numbers
-"set ruler                  "show file stats
-
-"set visualbell             "blink cursor on error instead of beeping (grr)
-"set encoding=utf-8         "encoding
-
-""--Whitespace--
-"set wrap
-"set textwidth=79
-"set formatoptions=tcqrn1
-"set tabstop=2
-"set shiftwidth=2
-"set softtabstop=2
-"set expandtab
-"set noshiftround
-"
-""--Cursor motion--
-set mouse=a           "enable mouse in vim buffer
-set scrolloff=4
-"set backspace=indent,eol,start
-"set matchpairs+=<:> " use % to jump between pairs
-"runtime! macros/matchit.vim
-
-""--Move up/down editor lines--
-"nnoremap j gj
-"nnoremap k gk
-
-"set hidden                 "allow hidden buffers
-"set ttyfast                "rendering
-"set laststatus=2           "status bar
-"
-""--Last line--
-"set showmode
-"set showcmd
-"
-"" Searching
-"nnoremap / /\v
-"vnoremap / /\v
-"set hlsearch
-"set incsearch
-"set ignorecase
-"set smartcase
-"set showmatch
-"map <leader><space> :let @/=''<cr> " clear search
-".vimrc" 81L, 1895B
