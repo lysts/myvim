@@ -52,8 +52,6 @@ set showmode			"display mode in last line of screen
 set showcmd			"show (partial) command in last line of screen
 
 "--Searching--
-nnoremap / /\v			"normal mode, characters have meaning (magic!) if accompanied by backslash
-vnoremap / /\v			"similarly for visual & select mode
 set hlsearch			"highlight search results
 set incsearch			"searches for strings while typing search term
 set ignorecase			"no case sensitivity when searching
