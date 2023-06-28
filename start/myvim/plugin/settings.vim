@@ -28,7 +28,7 @@ set ttyfast                	"rendering
 set laststatus=2          	"status bar
 
 "--Whitespace--
-set wrap			"lines longer > width of window wraps
+set wrap			    "lines longer > width of window wraps
 set textwidth=79		"max width of inserted txt, long line broken to get width, 0 to disable
 set tabstop=4			"max no. whitespace columns \t can take up 
 set shiftwidth=4		"default no. auto-indent spaces
