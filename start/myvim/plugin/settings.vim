@@ -7,25 +7,28 @@
 "╚══════╝░░░╚═╝░░░╚═════╝░░░░╚═╝░░░╚═════╝░
 "---- VIMRC SETTINGS -----
 
-set nocompatible		"don't try to be vi compatible
+set nocompatible		    "don't try to be vi compatible
 
-syntax on			"enable syntax highlighting; highlights files in colour		
+syntax on			        "enable syntax highlighting; highlights files in colour		
 filetype plugin indent on	"to load plugins correctly; vim detects filetype, file-specific indent on
 
-set number			"show line numbers
-set ruler			"show file stats
-set encoding=utf-8		"sets characters with which vim can work with
-set undolevels=200		"no. undo levels
+set number			        "show line numbers
+set ruler			        "show file stats
+set encoding=utf-8		    "sets characters with which vim can work with
+set undolevels=200		    "no. undo levels
+colorscheme default         "default vim colorscheme
 
 "--General--
-set undodir=~/.vim/undo//	"undo files
+set undodir=~/.vim/undo//	    "undo files
 set backupdir=~/.vim/backups//	"backups
-set directory=~/.vim/swap//	"swapfiles
-set noswapfile			"avoid creating swapfile
+set directory=~/.vim/swap//	    "swapfiles
+set noswapfile			        "avoid creating swapfile
 
 set hidden                 	"allow hidden buffers
 set ttyfast                	"rendering
 set laststatus=2          	"status bar
+
+set clipboard=unnamedplus   "allow copy paste across different instances of vim
 
 "--Whitespace--
 set wrap			    "lines longer > width of window wraps
@@ -38,10 +41,10 @@ set expandtab			"use appropriate no. spaces to insert \t
 set noshiftround		"round indent to multiple of 'shiftwidth'
 
 "--Cursor motion--
-set mouse=a			"enable mouse in vim buffer
-set scrolloff=4			"centered scrolling focus
+set mouse=a			            "enable mouse in vim buffer
+set scrolloff=4			        "centered scrolling focus
 set backspace=indent,eol,start	"backspace behaviour
-set matchpairs+=<:>		"use % to jump between character pairs
+set matchpairs+=<:>		        "use % to jump between character pairs
 				
 "--Navigate editor lines--
 nnoremap j gj			"down a line
@@ -49,7 +52,7 @@ nnoremap k gk			"up a line
 
 "--Last line--
 set showmode			"display mode in last line of screen
-set showcmd			"show (partial) command in last line of screen
+set showcmd			    "show (partial) command in last line of screen
 
 "--Searching--
 set hlsearch			"highlight search results
