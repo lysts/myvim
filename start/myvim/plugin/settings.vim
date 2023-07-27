@@ -16,7 +16,7 @@ set number			        "show line numbers
 set ruler			        "show file stats
 set encoding=utf-8		    "sets characters with which vim can work with
 set undolevels=200		    "no. undo levels
-colorscheme default         "default vim colorscheme
+colorscheme slate           "vim colorscheme
 
 "--General--
 set undodir=~/.vim/undo//	    "undo files
