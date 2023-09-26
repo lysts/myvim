@@ -37,7 +37,7 @@ set textwidth=0		"max width of inserted txt, long line broken to get width, 0 to
 set tabstop=4			"max no. whitespace columns \t can take up 
 set shiftwidth=4		"default no. auto-indent spaces
 set softtabstop=4		"no. spaces per \t 
-set autoindent		"auto-indent new lines
+""set autoindent		"auto-indent new lines
 set expandtab		"use appropriate no. spaces to insert \t
 set noshiftround		"round indent to multiple of 'shiftwidth'
 
